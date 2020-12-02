@@ -1,0 +1,5 @@
+Technology,Package,Projects Matching the Import,Projects With DB Accesses,Projects with Tests
+JDBC,java.sql,752,330,67
+JPA,javax.persistence,237,29,16
+Hibernate,org.hibernate,194,11,12
+Hibernate,"org.springframework;orm.hibernate",25,2,1
