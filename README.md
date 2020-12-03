@@ -17,7 +17,7 @@ The final classification for the research question.
 - [Summary of labels](problems/category_summary.csv)
 - [StackExchange questions and their final labels](problems/question_categories.csv)
 - [StackExchange questions referenced in the paper](problems/StackExchange_references.csv)
-- [Screenshot of the labeling platform showing a tagged question](problems/Schreenshot_Tagging.png)
-- [Screenshot of the labeling platform showing resolved conflicts for a question](problems/Screenshot_ConflictResolving.png)
+- [Screenshot of the labeling platform showing a tagged question](problems/Platform_Tagging.png)
+- [Screenshot of the labeling platform showing resolved conflicts for a question](problems/Platform_ConflictResolving.png)
 
 ![Taxonomy](problems/taxonomy.png "Taxonomy")
