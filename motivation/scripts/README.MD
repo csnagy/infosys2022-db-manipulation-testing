@@ -44,7 +44,7 @@
 	Usage: com.coverage.QueryCoverageAnalyzer <sqlinspect xmls dir> <coverage xmls dir> <test reports dir> <maxNameConvention:true|false> <results db> <truncate>
 	
 
-### Jacoco Mavien Dependency 
+### Jacoco Maven Dependency 
 ```
 <plugin>
 	    <groupId>org.jacoco</groupId>
