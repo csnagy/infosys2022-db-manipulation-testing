@@ -1,0 +1,366 @@
+,name,artefacts
+0,Characteristics > Atomic > Atomic tests,2
+1,Characteristics > Atomic > Shouldn't call tests inside tests,1
+2,Characteristics > Atomic > Test should focus on one thing,2
+3,Characteristics > Compliant > Test should meet specifications,2
+4,Characteristics > Consistent > Stateless,1
+5,Characteristics > Consistent > Tests should leave the DB in a consistent state,2
+6,Characteristics > Deterministic > Minimise moving parts to avoid non-deterministic tests,1
+7,Characteristics > Deterministic > Tests should be deterministic,2
+8,Characteristics > Fast > Fast (Unit Test),1
+9,Characteristics > Isolated/Independent > Assume that the external component works fine,1
+10,Characteristics > Isolated/Independent > Avoid connecting to production db,3
+11,Characteristics > Isolated/Independent > Avoid relying on test order,1
+12,Characteristics > Isolated/Independent > Decouple tests from implementation,2
+13,Characteristics > Isolated/Independent > Keep tests independent,1
+14,Characteristics > Isolated/Independent > Unit test should be independent / isolated,7
+15,Characteristics > Isolated/Independent > Unit tests shoudn't touch an actual database,1
+16,Characteristics > Isolated/Independent > Unit tests should not be dependent upon external state,1
+17,Characteristics > Isolated/Independent > Use plain queries instead of external functions,1
+18,Characteristics > Maintainable > Avoid brittle unit tests,1
+19,Characteristics > Maintainable > Maintainable tests,1
+20,Characteristics > Paralysable > Unit tests should be runnable in parallel,2
+21,Characteristics > Repeatable > Repeatable tests,5
+22,Characteristics > Repeatable > Test against the same data when optimizing query,1
+23,Characteristics > Self-explaining > Assumptions on existings records should be obvious,2
+24,Characteristics > Self-explaining > Have descriptive names,1
+25,Characteristics > Self-explaining > Intuitive test case names,1
+26,Characteristics > Simple > Avoid loops,1
+27,Characteristics > Simple > Avoid too complicated fixtures,1
+28,Characteristics > Small > Make small tests,2
+29,Characteristics > Up-to-date > Keep test DB in sync with production DB to avoid testing stale/outdated data,2
+30,Concepts > Book > Book recommendation,7
+31,Concepts > Coverage > 100% coverage is not possible,6
+32,Concepts > Coverage > Aim at 100% of the DAO layer,1
+33,Concepts > Coverage > Cover all corners,5
+34,Concepts > Coverage > Cover critical execution paths,1
+35,"Concepts > Coverage > No textbook rule, each coverage rate acceptable depends on the situation",1
+36,Concepts > Coverage > Test border cases,1
+37,Concepts > Coverage > Test everything you can test,1
+38,"Concepts > Definitions > Explanation of levels of tests: unit, interaction, integration and acceptance tests",32
+39,Concepts > Definitions > Feature tests,1
+40,Concepts > Definitions > Integration tests involves real database,5
+41,"Concepts > Definitions > Isolation can cost too much (unit test), do integration test",1
+42,Concepts > Definitions > Maintaining test data,1
+43,Concepts > Definitions > Managing schema,1
+44,Concepts > Definitions > No side effect and isolated = unit test,3
+45,Concepts > Definitions > Schema tests,1
+46,Concepts > Definitions > Security tests,1
+47,Concepts > Definitions > Stock data tests,1
+48,Concepts > Definitions > Stubs vs Mocks,1
+49,Concepts > Definitions > TDD has to be unit tests rather than integration tests,1
+50,Concepts > Definitions > Testing Triangle,1
+51,Concepts > Definitions > There is no point in unit testing it,1
+52,Concepts > Definitions > Treat like first-class production batch job,1
+53,Concepts > Definitions > Unit tests are faster,1
+54,Concepts > Definitions > Unit tests are incomplete,1
+55,Concepts > Definitions > Unit tests involves mocking,1
+56,Concepts > Definitions > Unit under test term can vary,1
+57,Concepts > Scope > Don't test it > Do not test anything that can't fail,1
+58,Concepts > Scope > Don't test it > Don't test 3rd party code,4
+59,Concepts > Scope > Don't test it > Don't test it if there is no logic there,5
+60,Concepts > Scope > Don't test it > Test verify observable behavior not internal methods calls,1
+61,Concepts > Scope > Test it > Add test to verify charsets,1
+62,Concepts > Scope > Test it > Check both the entities and queries,1
+63,"Concepts > Scope > Test it > Instead of the external call, test if its parameters are correct",1
+64,Concepts > Scope > Test it > Integration test the Orchestrator class,1
+65,Concepts > Scope > Test it > Localization,1
+66,"Concepts > Scope > Test it > One test for each type of output resultset (one row, multiple rows, empty resultset)",1
+67,Concepts > Scope > Test it > Performance,1
+68,Concepts > Scope > Test it > Regular input,1
+69,Concepts > Scope > Test it > Stress test,1
+70,Concepts > Scope > Test it > Systematically run important queries,1
+71,Concepts > Scope > Test it > Test DAO/Repository normally if it performs any logic,3
+72,Concepts > Scope > Test it > Test data as well and not just counts,1
+73,Concepts > Scope > Test it > Test failing calls (code behaves as expected in case smething goes wrong),2
+74,Concepts > Scope > Test it > Test front end and back end separately,1
+75,Concepts > Scope > Test it > Testing inner dependencies (Interaction Testing),1
+76,Concepts > Scope > Test it > Test mappings/implementations are working with the DB,1
+77,Concepts > Scope > Test it > Test pre- and postconditions,1
+78,Concepts > Scope > Test it > Test query correctness,2
+79,"Concepts > Scope > Test it > Test that the correct query was sent, mock results",2
+80,Concepts > Scope > Test it > Test the basic cases in DAO/Repository,1
+81,Concepts > Scope > Test it > Test the connection string,1
+82,"Concepts > Scope > Test it > Test the database itself (tables, views, triggers, stored procedures, constraints)",1
+83,Concepts > Scope > Test it > Test the database schema,1
+84,Concepts > Scope > Test it > UI,1
+85,Concepts > Scope > Test it > Write CRUD tests,1
+86,DB Management > Cleanup > Cleanup before each test (known state),20
+87,DB Management > Cleanup > Delete the database after all the tests,2
+88,DB Management > Cleanup > Destroy In-Memory DB after each test case,1
+89,DB Management > Cleanup > Disable caching between queries,2
+90,DB Management > Cleanup > Execute all tests against the test database (not only one and restore),1
+91,DB Management > Cleanup > Flush tables between test runs,1
+92,"DB Management > Cleanup > Load the database at the start of the suite, clear rows and reload data for tables that have changed before each test",1
+93,DB Management > Cleanup > Populate once and rollback changes after each test,5
+94,"DB Management > Cleanup > Populate once, and rollback changes before each test",3
+95,DB Management > Cleanup > Populate once and use MERGE statement to remove/insert/update unwanted data,1
+96,"DB Management > Cleanup > Recreate test db after each test run, if the test modified it",1
+97,DB Management > Cleanup > Recreate test db for each test run,2
+98,DB Management > Cleanup > Rollback the database after each test and migrate it before the next test,1
+99,DB Management > Cleanup > Transactions > Avoid roll back at the end of transaction,1
+100,DB Management > Cleanup > Transactions > Run queries in transaction,2
+101,DB Management > Cleanup > Transactions > Transaction Manager,3
+102,DB Management > Cleanup > Transactions > Use transaction scopes (which revert the state of DB after each test),14
+103,DB Management > Cleanup > Use JUnit @Before to clean up DB before each test,1
+104,DB Management > Connection > Create connection factory,2
+105,DB Management > Connection > direct access to database for object creation,1
+106,DB Management > Connection > Don't do in set-up (it will connect once per test),1
+107,DB Management > Connection > Hashmap to connect to the DB,1
+108,DB Management > Connection > Pass connection as parameter,1
+109,DB Management > Connection > Set time out conenction limit,1
+110,DB Management > Connection > The caller should handle the connection,1
+111,DB Management > Connection > Use persistent connections,1
+112,DB Management > Preparation > Create database from single script,1
+113,DB Management > Preparation > Each test should prepare its data,1
+114,"DB Management > Preparation > Initialise DB with general configuration before all tests, then before each test, set the database in the context required by each test",2
+115,DB Management > Preparation > Raw SQL to create tables in test set up,1
+116,DB Management > Preparation > Seeding the minimum needed for the concerned test,2
+117,"DB Management > Preparation > Separate read-only and CUD tests, read-only regenerates DB only once per test suite, CUD before each test",1
+118,DB Management > Preparation > Set the DB in a well-known state with SQL scripts,1
+119,DB Management > Preparation > setUp() & tearDown() methods,17
+120,DB Management > Preparation > Use Migrations to populate DB,1
+121,DB Management > Preparation > Use SQLite to copy and restore db file,1
+122,DB Management > Preparation > Use test fixtures,6
+123,DB Management > Preparation > Use the API code to populate data,1
+124,DB Management > Test data > Generation > Create random but valid data entries,1
+125,DB Management > Test data > Generation > Generate during the build process,1
+126,DB Management > Test data > Generation > Have enough data for all the tests,1
+127,DB Management > Test data > Generation > Use Object serialization,1
+128,DB Management > Test data > Generation > Use ORM to init test data,1
+129,DB Management > Test data > Storage > Do not mix test data with testing code,1
+130,DB Management > Test data > Usage > Keep irrelevant data out of the test,1
+131,DB Management > Test data > Usage > Only read what you need,1
+132,DB Management > Test DB > Don't use different type of DB than in production,1
+133,DB Management > Test DB > Imply a 'static' database to test stored procedures,1
+134,DB Management > Test DB > Keep in synch with production codebase,1
+135,DB Management > Test DB > Separate Database for Testing,4
+136,DB Management > Test DB > Use a Test database and rollback,5
+137,DB Management > Test DB > Use a test database with test data,16
+138,DB Management > Test DB > Use backed up database to create a test database,1
+139,DB Management > Test DB > Use CI to build DB schema and load the sample data,1
+140,DB Management > Test DB > Use copy database to create a test database,1
+141,DB Management > Test DB > Use embedded DB so tests can run in parallel,1
+142,DB Management > Test DB > Use local database,4
+143,DB Management > Test DB > Use local DB so the DB environment does not affect the tests,1
+144,DB Management > Test DB > Use the same RDBS for testing and production,1
+145,"DB Management > Test DB > Use two settings/configuration files (one for production, and one for testing)",1
+146,Environment > Configuration > App Framework > Flask > Flask and SQLAlchemy configuration,1
+147,Environment > Configuration > App Framework > PHPCake > Parameter for query logging,1
+148,Environment > Configuration > App Framework > Ruby > Clean Gemfiles,1
+149,Environment > Configuration > Build Framework > Maven > Command-line instruction,1
+150,Environment > Configuration > Build Framework > Maven > Maven lifecycles,1
+151,Environment > Configuration > Build Framework > Maven > SQL Maven plugin,1
+152,Environment > Configuration > Build Framework > Maven > Update pom.xml file,1
+153,Environment > Configuration > Build Framework > Rake > Database Cleanup command,1
+154,Environment > Configuration > Build Framework > Rake > Migration command,2
+155,Environment > Configuration > DB > Specific database configuration recommendation,10
+156,Environment > Configuration > DB > Tune DB config for testing,1
+157,"Environment > Configuration > DB > Turn off MySQL ""autocommit""",1
+158,"Environment > Configuration > DB > Use MySQL ""sql_no_cache""",1
+159,Environment > Configuration > Environment > Cloud > Create multiple projects for testing (Firebase cloud),1
+160,Environment > Configuration > Environment > Directory Structure > Directory structure to separate test config,1
+161,Environment > Configuration > Environment > Mirror production environment for testing,1
+162,"Environment > Configuration > Environment > Use ""application factory"" to instantiate app with different configuration",1
+163,Environment > Configuration > General recommendation > Configuration recommendation,8
+164,Environment > Configuration > General recommendation > Recommend specific library/configuration,3
+165,Environment > Configuration > General recommendation > Upgrade to newer version,2
+166,Environment > Configuration > Testing Framework > Capybara > Framework/Tool Usage > Capybara configuration,1
+167,Environment > Configuration > Testing Framework > Django > Add this line of code,2
+168,Environment > Configuration > Testing Framework > Django > Different settings for production and testing (staging) databases in Django,2
+169,Environment > Configuration > Testing Framework > Django > Django - Avoid creatinf database when it exists,1
+170,Environment > Configuration > Testing Framework > Mocha > clean up after all tests,1
+171,Environment > Configuration > Testing Framework > PHPUnit > Parameter for fixture debugging,1
+172,Environment > In-Memory DB > Derby > Use Apache Derby,2
+173,Environment > In-Memory DB > Ephermal PG > Ephemeral PG (In-Memory PostgreSQL),1
+174,Environment > In-Memory DB > Generic recommendation > Specific in memory database recommandation,2
+175,Environment > In-Memory DB > Generic recommendation > Use in memory database,32
+176,Environment > In-Memory DB > H2 > H2,3
+177,Environment > In-Memory DB > HSQLDB > configuration for Oracle compatibility,1
+178,Environment > In-Memory DB > HSQLDB > HSQLDB,6
+179,Environment > In-Memory DB > HSQLDB > Use latest version,1
+180,Environment > In-Memory DB > HyperSQL > Use HyperSQL to emulate dialect of another DB,1
+181,Environment > In-Memory DB > Mongo > Mongo,1
+182,Environment > In-Memory DB > SQLIte (In-Memory) > Configuration to use SQLIte as an in-memory DB,1
+183,Environment > In-Memory DB > SQLIte (In-Memory) > Use SQLIte as in-memory DB,2
+184,Environment > Tool > Acceptance Test > Combine Capybara with Selenium,1
+185,Environment > Tool > DB Cleanup > DatabaseCleaner (Ruby),1
+186,Environment > Tool > DB Migration > Configure views > Scenic,1
+187,Environment > Tool > DB Migration > Use a database migration tool,1
+188,Environment > Tool > DB Migration > Use flyway/liquibase,1
+189,Environment > Tool > DB Preparation > Doctrine Fixtures (Symfony),1
+190,Environment > Tool > Generic recommendation > Use a testing framework,1
+191,Environment > Tool > Generic recommendation > Various tool recommendations,2
+192,Environment > Tool > Integration Testing > Codeception,1
+193,Environment > Tool > Integration Testing > Use testegration,1
+194,Environment > Tool > Mocking > Easymock,1
+195,Environment > Tool > Mocking > Mockito and Spring,1
+196,Environment > Tool > Mocking > NMock,1
+197,Environment > Tool > Mocking > Rhino Mock,1
+198,Environment > Tool > Mocking > Typemock,2
+199,Environment > Tool > Mocking > Use a Mocking Framework,3
+200,Environment > Tool > Mocking > Use Mockito,5
+201,Environment > Tool > Mocking > Use Moq,2
+202,Environment > Tool > Mocking > Use PowerMockito,1
+203,Environment > Tool > Mocking > Use Spring Data Mock,1
+204,Environment > Tool > Mocking > Use TypeMock,1
+205,Environment > Tool > Static Analysis > SQLCop,1
+206,Environment > Tool > Test Data Generation > Rails' Factory Girl,2
+207,Environment > Tool > Testing Framework > DB Plugin > Use Spork,1
+208,Environment > Tool > Testing Framework > USe Spring MVC Test framework,1
+209,Environment > Tool > Testing Framework > Use TestNG,1
+210,Environment > Tool > UI Testing > Selenium,1
+211,Environment > Tool > Unit & Integration Testing > Use DBFit,2
+212,Environment > Tool > Unit Testing > MBUnit,1
+213,Environment > Tool > Unit Testing > MyTAP,1
+214,Environment > Tool > Unit Testing > STK/Unit,1
+215,Environment > Tool > Unit Testing > Test isolation plugin > Use Microsoft Fakes,1
+216,Environment > Tool > Unit Testing > tSQLt,1
+217,Environment > Tool > Unit Testing > TSQLUnit,1
+218,Environment > Tool > Unit Testing > Use a unit test framework,2
+219,Environment > Tool > Unit Testing > Use DbUnit,24
+220,Environment > Tool > Unit Testing > Use Effort (Tool),1
+221,Environment > Tool > Unit Testing > Use JUnit,1
+222,Environment > Tool > Unit Testing > Use PHPUnit,5
+223,Environment > Tool > Unit Testing > Use Spring Boot and Spring Data,1
+224,Environment > Tool > Unit Testing > Use Spring Framework,2
+225,Environment > Tool > Unit Testing > Use SSDT (SQL Server Data Tools) unit tests,1
+226,Environment > Tool > Unit Testing > Zend PHPUnit DB plug-in,1
+227,Environment > Tool > Virtualization > Use Docker,1
+228,Environment > Tool > Virtualization > Use testcontainer,1
+229,Environment > Tool > Vulnerability Testing > Check PHP-IDS,1
+230,Environment > Tool > Vulnerability Testing > Vulnerability Testing,3
+231,"Environment > Use Real DB > Generic recommendation > Avoid memory DB: not fully compatible, no full reliability",1
+232,Environment > Use Real DB > Generic recommendation > Use real database,14
+233,Environment > Use Real DB > SQLite > Faster tests > Use SQLite for faster tests,1
+234,Environment > Use Real DB > SQLite > Faster tests > Use SQLite for integration tests,2
+235,IRRELEVANT ANSWER,18
+236,Mocking > How > Custom mocking code without framework,1
+237,Mocking > How > Use lists with LINQ to emulate db operations,1
+238,Mocking > How > Use stub and fake classes,6
+239,Mocking > How > Use wrapper implementation class,2
+240,Mocking > How > Verify exception is thrown using Mockito.verify,1
+241,Mocking > What > Mock stored procedure,1
+242,Mocking > What > Mock the DAO not the db calls,4
+243,Mocking > What > Mock the DAO to test the Services,1
+244,Mocking > What > Mock the Repository/Service layer,1
+245,Mocking > What > Mock the wrapper,1
+246,Mocking > When > Avoid mocking for testing the entire stack,1
+247,"Mocking > When > DAO too difficult to Mock, use integration tests",1
+248,Mocking > When > Don't mock connection,1
+249,"Mocking > When > Mock commands, not queries",1
+250,"Mocking > When > Mocking the DB is bad practice, use integration/acceptance test",1
+251,Mocking > When > Replace the DB with a mock object,9
+252,Mocking > When > Use Mocking,43
+253,Mocking > When > Use mocking sparingly,2
+254,Mocking > When > Use mocking to test in isolation,1
+255,NO ANSWER,4
+256,Performance > Benchmarking > Run awrgrpt.sql (Oracle),1
+257,Performance > General improvement > Deferring garbage collection,1
+258,Performance > General improvement > Have a light process to build the test database,1
+259,Performance > General improvement > Use a light weight database,1
+260,Performance > General improvement > Use ORM to support a light testing dbms,2
+261,Performance > General improvement > Use table partitioning,1
+262,Performance > General improvement > Use tmpfs,1
+263,Performance > Query optimisation > Optimise queries,1
+264,Performance > Query optimisation > Speed up insert > Use multi_query API (MySQL),1
+265,Performance > Query optimisation > Speed up insert > Use prepared statement in loops,1
+266,Performance > Query optimisation > Use additional indexes to speed up test queries,1
+267,"Performance > Query optimisation > Use ""last_query_cost"" (MySQL)",1
+268,Process > Automatization > Automated Deployment > Blue Green Deployment,1
+269,Process > Automatization > Automate upgrades in database structures,1
+270,Process > Automatization > Fully automated tests,1
+271,Process > Automatization > Run slower tests as part of a nightly build,1
+272,Process > Automatization > Split integration tests into short-/long-running tests,1
+273,Process > Automatization > Use unit test framework for integration test,2
+274,Process > Continuous Integration > Don't dump the entire database into source control,1
+275,Process > Continuous Integration > Rebuild a dedicated test DB for every build,1
+276,Process > Continuous Integration > Write change scripts for schema and data change,1
+277,Process > Development > Acceptance Test Driven Development,2
+278,Process > Development > Add Unit Tests as you add new functionality,2
+279,Process > Development > Allow concurrent work of developers,1
+280,Process > Development > Use Behavior-driven development (BDD),2
+281,Process > Development > Use Test-driven development (TDD),1
+282,Process > Test Failure Identification / Debugging > Isolated failures,1
+283,Process > Test Failure Identification / Debugging > Log failing / slow queries,1
+284,Process > Test Failure Identification / Debugging > SQLDeveloper Run/PL/SQL Window,1
+285,Process > Test Failure Identification / Debugging > Use Active Record Explain to only log specific queries (Rails),1
+286,Process > Testing > Add tests as new defects come up,1
+287,Process > Testing > Add tests retroactively,1
+288,Process > Testing > Automated UI testing,2
+289,Process > Testing > Best option is state based tests,2
+290,Process > Testing > Contract base testing for Entity Framework,1
+291,Process > Testing > Manual UI Testing,1
+292,Process > Testing > Practice writing unit tests,1
+293,Process > Testing > Run Integration tests after unit tests,1
+294,"Process > Testing > Run integration tests on test/acceptance environment, not production",1
+295,Process > Testing > Run tests on checkin,1
+296,Process > Testing > Separate selection tests and data manipulation tests,1
+297,Process > Testing > Seperate unit and integration testing,4
+298,Process > Testing > Standardise testing methods,1
+299,Process > Testing > Test persistence layer through manual testing,1
+300,Process > Testing > Use integration testing,10
+301,Structure/Design > Coupling > Avoid god class,1
+302,Structure/Design > Coupling > Create a separate package,1
+303,Structure/Design > Coupling > Design with loose coupling,5
+304,Structure/Design > Coupling > With DB > Concentrate database accesses in a few classes,1
+305,Structure/Design > Coupling > With DB > Create a Service layer,1
+306,Structure/Design > Coupling > With DB > Decouple data layer,1
+307,Structure/Design > Coupling > With DB > Inversion of control,1
+308,Structure/Design > Coupling > With DB > Keep logic out of database,1
+309,Structure/Design > Coupling > With DB > Model should not depend on a DB,1
+310,Structure/Design > Coupling > With DB > Separate data access layer,2
+311,Structure/Design > Design Patterns > Consider Data builder pattern,1
+312,Structure/Design > Design Patterns > Have a base class for integration test fixtures,2
+313,Structure/Design > Design Patterns > Have a DAO,1
+314,Structure/Design > Design Patterns > MVP (Model-View-Presenter),1
+315,Structure/Design > Design Patterns > PDO (PHP Data Objects) best practice,1
+316,Structure/Design > Design Patterns > Recommendation of design pattern,2
+317,Structure/Design > Design Patterns > Use dependency injection,14
+318,"Structure/Design > Design Patterns > Use template interfaces for all repositories, so the mock implements that interface",2
+319,Structure/Design > Testability > Avoid constructing objects inside other objects,1
+320,Structure/Design > Testability > Break the code down to smaller testable units,1
+321,Structure/Design > Testability > Break the procedures (db/code) down to smaller parts,1
+322,Structure/Design > Testability > Database design recommandation,1
+323,"Structure/Design > Testability > Data object should focus on holding data, not functionality",1
+324,Structure/Design > Testability > Decompose your queries,1
+325,Structure/Design > Testability > Design with single responsibility,4
+326,Structure/Design > Testability > Follow the Open/Closed principle,1
+327,Structure/Design > Testability > Important code or business logic should not be in stored procedure,1
+328,Structure/Design > Testability > Refactoring to reduce complexity,1
+329,Structure/Design > Testability > Refactoring to reduce coupling,1
+330,Structure/Design > Testability > Refactoring to remove business logic from procedures,1
+331,Structure/Design > Testability > Testability,1
+332,Test Code > API > Android > Use AndroidTestCase,1
+333,Test Code > API > Android > Use content providers instead of database adapters,1
+334,Test Code > API > Custom code garanteed to fail and raise SQLException,1
+335,Test Code > API > Exception Handling >  Set error mode to exception mode (PHP PDO),1
+336,Test Code > API > Exception Handling > Use reflection to simulate SQLException,1
+337,Test Code > API > Implement test-specific API in a subclass,1
+338,Test Code > API > InstrumentationRegistry,1
+339,Test Code > API > MockitoJUnitRunner,1
+340,Test Code > API > NUnit > Decorate test classes/methods to differentiate Integration/Unit tests,1
+341,Test Code > API > Spring Framework > Use JDBC Namespace,1
+342,Test Code > API > Spring Framework > Use @Sql annotation to populate DB,1
+343,Test Code > API > Spring Framework > Use TestContext,1
+344,"Test Code > API > Use a callback mathod, executed every time the test code executes a given mock (Mockito)",1
+345,Test Code > API > Use parameterised tests,1
+346,Test Code > API > Use specific API,7
+347,Test Code > Assertions > Compare LINQ query results with DB query results,1
+348,Test Code > Assertions > Select rows from the DB to assert changes were done correctly,1
+349,Test Code > Assertions > Use custom SQL assertions,1
+350,Test Code > Assertions > Use single asserts,3
+351,"Test Code > Assertions > Verify results of migrations by using the new object, not only by looking at schema changes",1
+352,Test Code > Code correction > Code correction,3
+353,Test Code > Code correction > Code to check systable,1
+354,Test Code > Code example > Code example provided,31
+355,Test Code > Code example > Database test script,2
+356,Test Code > Code example > Test Examples,2
+357,Test Code > Organization > Use categories to easily exclude/include tests,1
+358,Test Code > Parallelisation > Design unit tests to be synchronous,1
+359,Test Code > Parallelisation > Queing (serializing) tests,1
+360,Test Code > Re-use production code > Use data layer of the system when testing,1
+361,Test Code > Re-use production code > Use production code in tests,1
+362,Test Code > Testing DB Schema > Run simple select to test columns existence,1
+363,Test Code > Testing Queries > Assume the DB would do the right thing and compare the generated SQL,2
+364,Test Code > Testing Stored Procedures > Test procedures in SQL,1
