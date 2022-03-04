@@ -18,7 +18,6 @@ The final classification for the research question.
 
 - [Summary of labels](problems/category_summary.csv)
 - [Stack Exchange questions and their final labels](problems/question_categories.csv)
-- [Stack Exchange questions referenced in the paper](problems/StackExchange_references.csv)
 - [Screenshot of the labeling platform showing a tagged question](problems/Platform_QuestionTagging.png)
 - [Screenshot of the labeling platform showing resolved conflicts for a question](problems/Platform_ConflictResolving.png)
 
