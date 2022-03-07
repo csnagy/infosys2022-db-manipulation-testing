@@ -2,7 +2,7 @@
 
 Replication package for the paper entitled "Best Practices of Testing Database Manipulation Code," submitted to the [Elsevier Information Systems](https://www.journals.elsevier.com/information-systems) journal.
 
-The paper extends the CAiSE 2021 paper "Challenges and Best Practices of Testing Database Manipulation Code."
+The paper extends the CAiSE 2021 paper "Challenges and Perils of Testing Database Manipulation Code."
 
 ## Motivational Study: How do developers test database access code?
 
